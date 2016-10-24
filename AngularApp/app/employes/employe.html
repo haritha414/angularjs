@@ -1,0 +1,18 @@
+<div ng-controller="employeCtrl">
+    <h1>employe details</h1>
+    <table class="table table-striped">
+
+        <tr>
+            <td>S.No</td>
+            <td>name</td>
+            <td>id</td>
+                  <td>salary</td>
+        </tr>
+        <tr ng-repeat="employe in employeList">
+            <td>{{$index+1}}</td>
+            <td>{{employe.employeName}}</td>
+            <td>{{employe.employeId}}</td>
+            <td>{{employe.employeSalary}}</td>
+        </tr>
+    </table>
+</div>
